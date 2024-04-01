@@ -1,1 +1,1 @@
-## End to End machin learning project
+## End to End machine learning project by Krish Naik
