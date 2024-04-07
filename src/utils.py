@@ -1,7 +1,7 @@
 import os
-from re import X
 import sys
 import dill
+import pickle
 
 import numpy as np
 import pandas as pd
@@ -22,7 +22,7 @@ def save_object(file_path, obj):
     except Exception as e:
         raise  CustomeException(e, sys)
     
-def evaluate_model(x_train, y_train, x_test, y_test, models, param):
+def evaluate_models(x_train, y_train, x_test, y_test, models, param):
     try:
         report = {}
         for i in range(len(list(models))):
